@@ -1,0 +1,28 @@
+<article>
+  <h2> #{threadTitle thread}
+  <section> #{threadContent thread}
+  
+  <h3> Replies
+  <section>
+    $if null replies
+      <p>No replies
+    $else
+      $forall Entity _ reply <- replies
+        <section>
+          <h4> #{replyTitle reply}
+          <small> @#{replyAuthor reply}
+          <section>
+            <p> #{replyContent reply}
+
+<article>
+  <h3> New Reply
+  <section>
+    <form method=post enctype=#{enctype}>
+      <div>
+        ^{replyWidget}
+        <input type=submit value="New Reply">
+
+<hr>
+
+<div>
+  <a href=@{BBSR}>back to threads

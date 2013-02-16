@@ -4,4 +4,7 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/ HomeR GET POST
+/ HomeR GET
+/bbs           BBSR GET POST
+/bbs/#ThreadId ThreadR GET POST
+

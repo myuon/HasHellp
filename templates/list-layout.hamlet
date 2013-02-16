@@ -1,0 +1,27 @@
+<article>
+  <h2> HasHellp Forum
+  <section> a forum.
+  
+  <h3> Recent Threads
+  <section>
+    $if null threads
+      <p>No recent threads
+    $else
+      <ul>
+        $forall Entity threadId thread <- threads
+          <li>
+            <a href=@{ThreadR threadId}> #{threadTitle thread}
+            <small> #{show $ threadCreated thread}
+
+<article>
+  <h3> New Thread
+  <section>
+    <form method=post enctype=#{enctype}>
+      ^{threadWidget}
+      <div>
+        <input type=submit value="New thread">
+
+<hr>
+
+<div>
+  <a href=@{HomeR}>back to top

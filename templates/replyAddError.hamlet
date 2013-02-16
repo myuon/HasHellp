@@ -1,0 +1,8 @@
+<h2>Error.
+<form method=post enctype=#{enctype}>
+    ^{replyWidget}
+    <div>
+        <input type=submit value="Post New Reply">
+
+<p>
+  <a href=@{BBSR}>back to Thread

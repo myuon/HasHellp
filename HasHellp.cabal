@@ -72,6 +72,8 @@ library
                  , data-default
                  , aeson
 
+                 , yesod-auth-oauth
+                 , authenticate-oauth
                  , time
 
 executable         HasHellp

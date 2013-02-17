@@ -1,1 +1,1 @@
-["--print-libdir"]
+["--info"]

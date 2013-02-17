@@ -1,0 +1,8 @@
+<h2>Error.
+<form method=post enctype=#{enctype}>
+    ^{threadWidget}
+    <div>
+        <input type=submit value="Post New Thread">
+
+<p>
+  <a href=@{BBSR}>back to Thread

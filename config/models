@@ -17,5 +17,6 @@ Thread
     deriving
 Reply
     title   Text
+    created UTCTime
     author  Text
     content Html

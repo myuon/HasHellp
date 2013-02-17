@@ -65,6 +65,7 @@ postThreadR threadId = do
 replyForm :: Form Reply
 replyForm = renderDivs $ Reply
     <$> areq textField "Title" Nothing
+    <*> aformM (liftIO getCurrentTime)
     <*> areq textField "Author" Nothing
     <*> areq nicHtmlField "Content" Nothing
 

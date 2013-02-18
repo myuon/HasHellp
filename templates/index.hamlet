@@ -1,5 +1,9 @@
 <h1>Welcome to HasHellp!
 
-<a href="/login">login
-
-<a href="/login_twitter">login with Twitter
+<ul>
+  <li>
+    <a href=@{twitterUrl}>via Twitter
+  <li>
+    <a href=@{forwardUrl}>via Google
+  <li>
+    <a href=@{githubUrl}>via Github

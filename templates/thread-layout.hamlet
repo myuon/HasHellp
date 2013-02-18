@@ -10,6 +10,7 @@
       $forall Entity _ reply <- replies
         <section>
           <h4> #{replyTitle reply}
+            <small> #{show $ replyCreated reply}
           <small> @#{replyAuthor reply}
           <section>
             <p> #{replyContent reply}
